@@ -33,6 +33,13 @@ public class Guess{
         else{
             System.out.println("You lose. The number was "+guess+".");
         }
+        System.out.println("wants to play again?/nif yess then press 1");
+        int choice=s.nextInt();
+        if(choice==1){
+            Guess.main(args);
+        }
+        else{
+            System.out.println("Thank you for playing");
         s.close();
     }
 }
